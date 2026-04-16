@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Student Portfolio - 2nd Year CSE Student at Anna University. Explore my projects, skills, and get in touch!" />
+  <title>My Portfolio | CSE @ Anna University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="rippleContainer" class="ripple-container"></div>
+
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">⚡</span>
+      <span class="brand-text">Profile</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section id="home" class="hero">
+    <canvas id="waterCanvas" class="water-canvas"></canvas>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-glow-orb hero-glow-1"></div>
+    <div class="hero-glow-orb hero-glow-2"></div>
+    <div class="hero-glow-orb hero-glow-3"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, World!</p>
+      <h1 class="hero-title">
+        I'm a <span class="gradient-text typing-text" id="typing"></span>
+      </h1>
+      <p class="hero-sub">
+        2nd Year <strong>Computer Science &amp; Engineering</strong> student at
+        <strong>Anna University</strong> — passionate about turning ideas into reality.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work 🚀</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect ✉️</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n" data-target="2">0</span><span>Years Study</span></div>
+        <div class="stat"><span class="stat-n" data-target="10">0</span><span>Projects</span></div>
+        <div class="stat"><span class="stat-n" data-target="5">0</span><span>Languages</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-title">team_info.py</span>
+        </div>
+        <pre class="code-body"><span class="kw">class</span> <span class="fn">ProjectTeam</span>:
+  team_no = <span class="num">10</span>
+  lead    = <span class="str">"G. Naveen Karthick"</span>
+  members = [<span class="str">"Naveen.M"</span>, <span class="str">"Naveen.C"</span>, <span class="str">"Nithin"</span>]
+  status  = <span class="str">"Building the Future 🚀"</span></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-tag">Who Am I?</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-emoji">👨‍💻</span>
+            </div>
+          </div>
+          <div class="about-badges">
+            <span class="badge">🎓 Anna University</span>
+            <span class="badge">💻 CSE Student</span>
+            <span class="badge">🌱 2nd Year</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            Hey there! My name is <strong>G. Naveen Karthick</strong>. I'm a curious and enthusiastic <strong>2nd-year
+              CSE student</strong> at
+            <strong>Anna University</strong>, deeply passionate about coding, problem-solving, and building
+            things that matter.
+          </p>
+          <p>
+            I love exploring everything from <strong>web development</strong> to <strong>data structures</strong>,
+            and I believe every line of code is a step closer to something awesome. I'm always ready to
+            learn, collaborate, and level up! 🚀
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new tech, participating in hackathons,
+            or watching tutorials that feed my endless curiosity.
+          </p>
+          <div class="about-info">
+            <div class="info-item"><span class="info-icon">🏫</span><strong>University:</strong> Anna University</div>
+            <div class="info-item"><span class="info-icon">📚</span><strong>Degree:</strong> B.E. Computer Science &amp; Engineering</div>
+            <div class="info-item"><span class="info-icon">📅</span><strong>Year:</strong> 2nd Year (2024 – 2028)</div>
+            <div class="info-item"><span class="info-icon">📍</span><strong>Location:</strong> Thoothukudi, Tamil Nadu, India</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team section">
+    <div class="container">
+      <div class="section-tag">My Squad</div>
+      <h2 class="section-title">Team <span class="gradient-text">No: 10</span></h2>
+      <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Great things in business are never done by one person. They're done by a team of people.</p>
+      
+      <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        
+        <div class="project-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div class="project-glow"></div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">👑</div>
+          <h3 style="margin-bottom: 0.5rem;">G. Naveen Karthick</h3>
+          <span class="badge" style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary);">Team Lead</span>
+        </div>
+
+        <div class="project-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div class="project-glow"></div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="margin-bottom: 0.5rem;">Naveen.M</h3>
+          <span class="badge" style="background: rgba(255, 255, 255, 0.05);">Core Member</span>
+        </div>
+
+        <div class="project-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div class="project-glow"></div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="margin-bottom: 0.5rem;">Naveen.C</h3>
+          <span class="badge" style="background: rgba(255, 255, 255, 0.05);">Core Member</span>
+        </div>
+
+        <div class="project-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div class="project-glow"></div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="margin-bottom: 0.5rem;">Nithin</h3>
+          <span class="badge" style="background: rgba(255, 255, 255, 0.05);">Core Member</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-tag">What I Know</div>
+      <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3>🌐 Web Development</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">HTML5</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="90"></div>
+              </div><span class="pct">90%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">CSS3</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="80"></div>
+              </div><span class="pct">80%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">JavaScript</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="70"></div>
+              </div><span class="pct">70%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🐍 Programming</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">Python</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="75"></div>
+              </div><span class="pct">75%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">C / C++</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="65"></div>
+              </div><span class="pct">65%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">Java</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="55"></div>
+              </div><span class="pct">55%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🔧 Tools &amp; Others</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">Git &amp; GitHub</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="70"></div>
+              </div><span class="pct">70%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">VS Code</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="85"></div>
+              </div><span class="pct">85%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-name">Problem Solving</span>
+              <div class="bar">
+                <div class="bar-fill" data-width="80"></div>
+              </div><span class="pct">80%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-icons">
+        <div class="tech-icon" title="HTML5">🌐</div>
+        <div class="tech-icon" title="CSS3">🎨</div>
+        <div class="tech-icon" title="JavaScript">⚡</div>
+        <div class="tech-icon" title="Python">🐍</div>
+        <div class="tech-icon" title="C++">⚙️</div>
+        <div class="tech-icon" title="Git">🌿</div>
+        <div class="tech-icon" title="Database">🗄️</div>
+        <div class="tech-icon" title="Terminal">💻</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-tag">What I've Built</div>
+      <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🧮</span>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub">⬛ Code</a>
+              <a href="#" class="proj-link" title="Live Demo"
+                onclick="event.preventDefault();openProject('calculator')">🔗 Live</a>
+            </div>
+          </div>
+          <h3>Calculator App</h3>
+          <p>A fully functional scientific calculator built with HTML, CSS, and JavaScript. Features keyboard support
+            and dark mode.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">📋</span>
+            <div class="project-links">
+              <a href="#" class="proj-link">⬛ Code</a>
+              <a href="#" class="proj-link" onclick="event.preventDefault();openProject('todo')">🔗 Live</a>
+            </div>
+          </div>
+          <h3>To-Do List Manager</h3>
+          <p>A sleek task management app with local storage persistence, priority tags, and drag-and-drop reordering.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">LocalStorage</span><span class="tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🐍</span>
+            <div class="project-links">
+              <a href="#" class="proj-link">⬛ Code</a>
+              <a href="#" class="proj-link" onclick="event.preventDefault();openProject('snake')">🔗 Live</a>
+            </div>
+          </div>
+          <h3>Snake Game</h3>
+          <p>Classic Snake game implemented with Python's Pygame library. Features highscore tracking and speed levels.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">Pygame</span><span class="tag">OOP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🌦️</span>
+            <div class="project-links">
+              <a href="#" class="proj-link">⬛ Code</a>
+              <a href="#" class="proj-link" onclick="event.preventDefault();openProject('weather')">🔗 Live</a>
+            </div>
+          </div>
+          <h3>Weather Dashboard</h3>
+          <p>A weather app using a public API to display real-time weather data with beautiful animated weather icons.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="#" class="proj-link">⬛ Code</a>
+              <a href="#" class="proj-link" onclick="event.preventDefault();openProject('results')">🔗 Live</a>
+            </div>
+          </div>
+          <h3>Student Result System</h3>
+          <p>A mini database-backed result management system for students. Built with Python and SQLite — complete CRUD
+            operations!</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">DBMS</span>
+          </div>
+          <span class="featured-label">⭐ Featured</span>
+        </div>
+
+        <div class="project-card add-card">
+          <div class="add-icon">＋</div>
+          <p>More projects coming soon...</p>
+          <span class="wip-label">🔨 Work in Progress</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-tag">Say Hello!</div>
+      <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      <p class="contact-sub">Got a project idea, question, or just want to chat? I'd love to hear from you! 🎉</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:naveenkarthickcoc@gmail.com" class="contact-card" style="text-decoration:none;color:inherit;">
+            <span class="contact-card-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>naveenkarthickcoc001</p>
+            </div>
+          </a>
+          <a href="https://www.annauniv.edu" target="_blank" rel="noopener" class="contact-card"
+            style="text-decoration:none;color:inherit;">
+            <span class="contact-card-icon">🏫</span>
+            <div>
+              <h4>University</h4>
+              <p>Anna University, Chennai</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/g-naveen-karthick-b8653932b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener" class="contact-card" style="text-decoration:none;color:inherit;">
+            <span class="contact-card-icon">💼</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>LinkedIn Profile</p>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar" required autocomplete="name" />
+            <span class="form-error" id="nameErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. ravi@example.com" required
+              autocomplete="email" />
+            <span class="form-error" id="emailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Project Collaboration" required />
+            <span class="form-error" id="subjectErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            <span class="form-error" id="msgErr"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message 🚀</span>
+            <span id="btnLoader" class="loader" style="display:none;"></span>
+          </button>
+          <div id="formSuccess" class="form-success" style="display:none;">
+            ✅ Message sent successfully! I'll get back to you soon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Made with <span class="heart">❤️</span> by <strong>G. Naveen Karthick</strong> @ Anna University</p>
+      <p class="footer-sub">Built with HTML · CSS · JavaScript | 2024</p>
+      <div class="footer-links">
+        <a href="#home">Home</a> ·
+        <a href="#about">About</a> ·
+        <a href="#team">Team</a> ·
+        <a href="#projects">Projects</a> ·
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
+
+  <div id="projectModal" class="project-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <span class="modal-icon" id="modalIcon"></span>
+        <h2 id="modalTitle">Project</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

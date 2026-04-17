@@ -1,4 +1,8 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 /* ═══════════════════════════════════════
    RESET, BASE & VARIABLES
 ═══════════════════════════════════════ */
